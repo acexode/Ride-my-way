@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ride-my-way</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+
+<body onload="checkLogin()">
+    <div class="nav">
+        <a class="active" href="#home">Home</a>
+        <a id="in" href="pages/login.html">Sign In</a>
+        <a id="in" href="pages/login.html">Sign Up</a>
+        <a id="out" href="#signOut">Sign Out</a>
+        <a id="profile" href="profile">Profile</a>
+        <a href="#about">About</a>
+    </div>
+
+    <div class="hero">
+
+
+        <form class="hero-content">
+            <div class="container search">
+
+                <input type="text" placeholder="From" name="from" required>
+
+
+                <input type="text" placeholder="To" name="to" required>
+                <input type="date" placeholder="Time" name="time" required>
+                <input type="time" placeholder="Time" name="time" required>
+
+                <button type="submit">Search</button>
+
+            </div>
+
+
+        </form>
+    </div>
+
+    <section>
+        <h3>All Rides</h3>
+        <ul id="available-rides" class="cards"></ul>
+    </section>
+
+
+    </ul>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
